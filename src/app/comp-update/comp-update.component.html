@@ -1,0 +1,21 @@
+<p>comp-update works!</p>
+<h1>tpAngularAire crud v5</h1>
+<div>
+    <p>REFERENCE :</p>
+    <input type="number" [(ngModel)]="p.reference" readonly>
+</div>
+
+<div>
+    <p>MARQUE :</p>
+    <input type="text"  [(ngModel)]="p.marque">
+</div>
+
+<div>
+    <p>PRIX :</p>
+    <input type="number" [(ngModel)]="p.prix">
+</div>
+<div>
+
+    <button (click)="update()">UPDATE</button>
+</div>
+{{message}}

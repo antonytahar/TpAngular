@@ -1,0 +1,20 @@
+<p>comp-createv3 works!</p>
+<h1>tpAngular crud v6</h1>
+<div>
+    <p>reference:</p>
+    <input type="text" [(ngModel)]="article.reference">
+</div>
+<div>
+    <p>marque:</p>
+    <input type="text" [(ngModel)]="article.marque">
+</div>
+<div>
+    <p>prix:</p>
+    <input type="number" [(ngModel)]="article.prix">
+</div>
+<div>
+    <button (click)="create()">create article</button>
+</div>
+<div>
+    Message: {{message}}
+</div>

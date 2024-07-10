@@ -1,0 +1,77 @@
+<p>comp7 works!</p>
+<h1>tpAngularAire v9 (et evo v10)</h1>
+
+<!-- 
+
+matricule: string;
+
+marque: string;
+
+proprio: Proprio;
+    nom: string;
+    prenom: string;
+
+complement: Complement; 
+    prix: number;
+    vmax: number;
+
+-->
+
+<div>
+  MATRICULE:<input type="text" [(ngModel)]="info.matricule" />
+  <br />
+  MARQUE:<input type="text" [(ngModel)]="info.marque" />
+  <br />
+  NOM:<input type="text" [(ngModel)]="info.nom" />
+  <br />
+  PRENOM:<input type="text" [(ngModel)]="info.prenom" />
+  <br />
+  PRIX:<input type="number" [(ngModel)]="info.prix" />
+  <br />
+  VMAX:<input type="number" [(ngModel)]="info.vmax" />
+  <br />
+  <button class="btn btn-primary" (click)="recap()">Récap</button>  <button class="btn btn-success" (click)="add()">ADD</button>
+</div>
+
+<br />
+<h2>{{ message }}</h2>
+
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">MATRICULE</th>
+      <th scope="col">MARQUE</th>
+      <th scope="col">NOM</th>
+      <th scope="col">PRENOM</th>
+      <th scope="col">PRIX</th>
+      <th scope="col">VMAX</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of tabVoiture">
+      <td>
+        {{ v.matricule }}
+      </td>
+
+      <td>
+        {{ v.marque }}
+      </td>
+
+      <td>
+        {{ v.proprio.nom }}
+      </td>
+
+      <td>
+        {{ v.proprio.prenom }}
+      </td>
+
+      <td>
+        {{ v.complement.prix }}
+      </td>
+
+      <td>
+        {{ v.complement.vmax }}
+      </td>
+    </tr>
+  </tbody>
+</table>

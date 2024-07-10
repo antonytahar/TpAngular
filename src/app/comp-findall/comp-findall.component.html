@@ -1,0 +1,26 @@
+<p>comp-findall works!</p>
+<table class="table table-dark table-striped ">
+    <thead>
+        <tr>
+          <th scope="col">Reference</th>
+          <th scope="col">Marque</th>
+          <th scope="col">Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr *ngFor="let c of Mylist">
+        <td>
+            {{c.reference}}
+        </td>
+        
+        <td>
+            {{c.marque}}
+        </td>
+
+        <td>
+            {{c.prix}}
+        </td>
+
+    </tr>
+</tbody>
+</table>

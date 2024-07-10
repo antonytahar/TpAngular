@@ -1,0 +1,27 @@
+<p>comp1 works!</p>
+<nav style="background-color: #6786a1;">
+    <div class="ui container" style="display: flex;justify-content: space-between;">
+
+        <div class="sub_menu">
+            <ul>
+                <li>
+                    <a [routerLink]="['/comp2']">COMP2</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/comp3']">COMP3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav style="background-color: #b31554;">
+    <button routerLink="/comp2" class="btn btn-primary">test comp2</button>
+    <button routerLink="/comp3" class="btn btn-primary">test comp3</button>
+</nav>
+
+<nav style="background-color: #266c10;">
+
+    <div><button (click)="comp2()">COMP2</button></div>
+    <div><button (click)="comp3()">COMP3</button></div>
+</nav>

@@ -1,0 +1,22 @@
+<p>comp-deletev3 basé sur deletev2 works!</p>
+<h1>tpAngularAire crud v5 (correspond au point: 3.proposer la delete v2 version typée)</h1>
+<table>
+    <tr *ngFor="let x of Mylist "  >
+        <td>
+            {{x.reference}}
+        </td>
+        <td>
+            {{x.marque }}
+        </td>
+        <td>
+            {{x.prix}}
+        </td>
+        <td><button (click)="delete(x)" > DELETE</button></td>
+    </tr>
+
+
+</table>
+
+<div>
+    MESSAGE:{{message}}
+</div>

@@ -1,0 +1,25 @@
+<p>update works!</p>
+
+<div>
+    <p>ID :</p>
+    <input type="number" [(ngModel)]="p.id" readonly>
+</div>
+
+<div>
+    <p>NOM :</p>
+    <input type="text"  [(ngModel)]="p.nom">
+</div>
+
+<div>
+    <p>PRENOM</p>
+    <input type="text"  [(ngModel)]="p.prenom">
+</div>
+<div>
+    <p>AGE :</p>
+    <input type="number" [(ngModel)]="p.age">
+</div>
+<div>
+
+    <button (click)="update()">UPDATE PERSONNE</button>
+</div>
+{{message}}

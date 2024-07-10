@@ -1,0 +1,30 @@
+<p>app9 works!</p>
+<div>
+    NOM:<input type="text" [(ngModel)]="info.nom">
+    <br>
+    PRENOM:<input type="text" [(ngModel)]="info.prenom">
+    <br>
+    <button (click)="add()">ADD</button>
+    </div>
+
+    <br>
+
+    <table>
+        <tr *ngFor="let c of tab">
+            <td>
+                {{c.nom}}
+            </td>
+            
+            <td>
+                {{c.prenom}}
+            </td>
+    
+        </tr>
+    
+    </table>
+    
+    
+    
+    
+    
+    

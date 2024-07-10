@@ -1,0 +1,24 @@
+<p>deletev2 works!</p>
+<table>
+    <tr *ngFor="let x of Mylist "  >
+        <td>
+            {{x.id}}
+        </td>
+        <td>
+            {{x.nom }}
+        </td>
+        <td>
+            {{x.prenom}}
+        </td>
+        <td>
+            {{x.age}}
+        </td>
+        <td><button (click)="delete(x)" > DELETE</button></td>
+    </tr>
+
+
+</table>
+
+<div>
+    MESSAGE:{{message}}
+</div>

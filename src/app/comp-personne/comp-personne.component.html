@@ -1,0 +1,16 @@
+<p>comp-personne works!</p>
+ <div>
+    <input type="text" [(ngModel)]="nom" ><br>
+    <input type="text" [(ngModel)]="prenom" ><br>
+    <input type="number" [(ngModel)]="age" min="0" max="120">
+</div>
+<div>
+    <button (click)="m1()">AFFICHER MON STATUT</button>  
+</div>
+
+<div>
+    NOM :  {{nom}}
+    PRENOM :  {{prenom}}
+    AGE :  {{age}}
+    STATUT : {{statut}}
+ </div>

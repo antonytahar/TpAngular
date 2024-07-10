@@ -1,0 +1,38 @@
+<p>comp-createv2 basé sur createv3 works!</p>
+<h1>tpAngularAire crud v5</h1>
+<div class="container">
+    <div>
+        <p>reference:</p>
+        <input type="text" [(ngModel)]="article.reference">
+    </div>
+    <div>
+        <p>marque:</p>
+        <input type="text" [(ngModel)]="article.marque">
+    </div>
+    <div>
+        <p>prix:</p>
+        <input type="number" [(ngModel)]="article.prix">
+    </div>
+    <div>
+        <button (click)="create()">create article v2</button>
+    </div>
+    <div>
+        Message: {{message}}
+    </div>
+</div>
+<hr>
+<div class="container">
+    <table class="table">
+        <tr *ngFor="let a of liste">
+            <td>
+                {{a.reference}}
+            </td>
+            <td>
+                {{a.marque}}
+            </td>
+            <td>
+                {{a.prix}}
+            </td>
+        </tr>
+    </table>
+</div>

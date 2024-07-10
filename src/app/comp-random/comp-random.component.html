@@ -1,0 +1,15 @@
+<p>comp-random works!</p>
+<h1>tpAngularAire v11 jeu random</h1>
+<h2>réponse est : {{random}}</h2>
+<div>
+    Jouer en <input type="number" name="nbTentativesMax" id="nbTentativesMax" [(ngModel)]="nbTentativesMax" [readonly]="isStarted" min="1"> tentatives.
+    <p>Le nombre à deviner est entre 1 et 10.</p>
+    <button type="button" (click)="debut()">Commencer</button>
+</div>
+
+Mon nombre :<input type="number" min="1" max="10" name="nbSaisi" [(ngModel)]="nbSaisi" id="nbSaisi">
+<button type="button" (click)="clickBouton()">Valider</button>
+<div>
+    <p>Nombre de tentatives restantes : {{nbTentativesMax-nbTentatives}}</p>
+    <h3>{{message}}</h3>
+</div>

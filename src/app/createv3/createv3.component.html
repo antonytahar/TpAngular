@@ -1,0 +1,44 @@
+<p>createv3 works!</p>
+<div class="container">
+    <div>
+        <p>id:</p>
+        <input type="number" [(ngModel)]="personne.id">
+    </div>
+    <div>
+        <p>Nom:</p>
+        <input type="text" [(ngModel)]="personne.nom">
+    </div>
+    <div>
+        <p>PreNom:</p>
+        <input type="text" [(ngModel)]="personne.prenom">
+    </div>
+    <div>
+        <p>Age:</p>
+        <input type="number" [(ngModel)]="personne.age">
+    </div>
+    <div>
+        <button (click)="create()">create personne v3</button>
+    </div>
+    <div>
+        Message: {{message}}
+    </div>
+</div>
+<hr>
+<div class="container">
+    <table class="table">
+        <tr *ngFor="let a of liste">
+            <td>
+                {{a.id}}
+            </td>
+            <td>
+                {{a.nom}}
+            </td>
+            <td>
+                {{a.prenom}}
+            </td>
+            <td>
+                {{a.age}}
+            </td>
+        </tr>
+    </table>
+</div>

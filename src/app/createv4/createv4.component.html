@@ -1,0 +1,24 @@
+<p>createv4 works!</p>
+
+<div>
+    <p>id:</p>
+    <input type="number" [(ngModel)]="personne.id">
+</div>
+<div>
+    <p>Nom:</p>
+    <input type="text" [(ngModel)]="personne.nom">
+</div>
+<div>
+    <p>PreNom:</p>
+    <input type="text" [(ngModel)]="personne.prenom">
+</div>
+<div>
+    <p>Age:</p>
+    <input type="number" [(ngModel)]="personne.age">
+</div>
+<div>
+    <button (click)="create()">create personne v4</button>
+</div>
+<div>
+    Message: {{message}}
+</div>
